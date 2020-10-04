@@ -17,9 +17,9 @@
  - If you didn't find the programming language that you want to code.  
     - Create a new file name as follows
 
-            fibonacci.<extension_of_particular_language>
+            <language>_fibonacci.<extension_of_particular_language>
 
-            e.g., fibonacci.py or fibonacci.c
+            e.g., python_fibonacci.py or CPP_fibonacci.c or C_fibonacci.cpp
 
 **5.** Create a new program in different Programming language or Make necessary changes to the existing code.
 
