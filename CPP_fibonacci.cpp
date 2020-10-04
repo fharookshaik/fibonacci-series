@@ -14,10 +14,15 @@ int main()
 
     while(nextTerm <= n)
     {
-        cout << nextTerm << ", ";
-        t1 = t2;
-        t2 = nextTerm;
-        nextTerm = t1 + t2;
+        if(nextTerm == n)
+            cout << nextTerm;
+        else {
+            cout << nextTerm << ", ";
+            t1 = t2;
+            t2 = nextTerm;
+            nextTerm = t1 + t2;
+        }
     }
+    
     return 0;
 }
