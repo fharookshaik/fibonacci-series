@@ -24,7 +24,7 @@ This gives us the following sequence that goes to infinity:
 
 Wanna Contribute to this repository.
 
-- View [CONTRIBUTION.md](https://github.com/fharookshaik/fibonacci_series/blob/main/CONTRIBUTION.md)
+- View [CONTRIBUTION.md](https://github.com/fharookshaik/fibonacci_series/blob/main/CONTRIBUTING.md)
 
 **Contribute to this repository for the Hacktoberfest2020.** 
 
