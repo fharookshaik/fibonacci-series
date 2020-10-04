@@ -26,4 +26,4 @@ Wanna Contribute to this repository.
 
 You can contribute for this repository for the Hacktoberfest2020.
 
- View [CONTRIBUTION.md]
+ View [CONTRIBUTION.md](https://github.com/fharookshaik/fibonacci_series/blob/main/CONTRIBUTION.md)
