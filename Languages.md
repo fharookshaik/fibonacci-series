@@ -9,7 +9,4 @@ Hello Coder!!
 
 ## Code already developed in this programming language.
 
-1. C
-2. C++
-3. Python
-4. JavaScript
+1. Python
