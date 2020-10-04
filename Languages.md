@@ -10,3 +10,4 @@ Hello Coder!!
 ## Code already developed in this programming language.
 
 1. Python
+2. C
