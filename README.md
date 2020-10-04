@@ -28,4 +28,25 @@ Wanna Contribute to this repository.
 
 **Contribute to this repository for the Hacktoberfest2020.** 
 
+## Hacktoberfest 2020
+
+People can contribute to this repository in the hacktoberfest month for cool grabs and to win a T-Shirt.
+ - In order to win the perks, One needs to finish 4 pull requests(PR).
+ 
+ 
+ 
+**Stuck with Queries. Feel free to contact me** 
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/fharook-shaik-7a757b181/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a> &nbsp; 
+ 
+<div align="center" width="50">
+
+</div>
+
+ 
+## Happy Coding !!
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
