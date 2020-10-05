@@ -6,7 +6,7 @@ Hello Coders,
 
 This repository is mainly targeted to collect program's in different programming languages of the famous Fibonacci series.
 
-## What is fibonacci series though
+## What is fibonacci series
 
 A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers is called as the Fibonacci Series.
 
