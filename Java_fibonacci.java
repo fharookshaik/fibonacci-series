@@ -16,7 +16,7 @@ public class Java_fibonacci {
         System.out.print(a+"\n "+b+"\n ");
         while(count<(n-2))
          {
-            BigInteger c=new BigInteger(a.add(b).toString());;
+            BigInteger c=new BigInteger(a.add(b).toString());
             System.out.print(c +"\n ");
             b=c;
             a=b;
