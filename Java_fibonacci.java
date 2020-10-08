@@ -2,7 +2,7 @@ package milestone6;
 
 import java.util.Scanner;
 
-public class Java_fibonacci {
+public class JavaFibonacci {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
