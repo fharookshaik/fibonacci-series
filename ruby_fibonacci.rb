@@ -7,7 +7,7 @@ def fibonacci(num)
     num_two = 1
     n = 0 
     
-    num.times do |i|
+    num.times do
         print "#{n} "
         num_one = num_two
         num_two = n
