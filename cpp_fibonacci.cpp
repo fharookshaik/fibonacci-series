@@ -1,8 +1,9 @@
+//Fibonacci series in cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int i, n, t1 = 0, t2 = 1;
+    int i, n, t1 = 0, t2 = 1git ;
    cout<<"Enter the number of terms: ";
    cin>>n;
     cout<<"Fibonacci Series: "<<endl;
