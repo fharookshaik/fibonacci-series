@@ -1,5 +1,5 @@
 [![Open Source Helpers](https://www.codetriage.com/fharookshaik/fibonacci_series/badges/users.svg)](https://www.codetriage.com/fharookshaik/fibonacci_series)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/74be3e830b164f5ebadb2b3f3b3b49f0)](https://app.codacy.com/gh/fharookshaik/fibonacci_series?utm_source=github.com&utm_medium=referral&utm_content=fharookshaik/fibonacci_series&utm_campaign=Badge_Grade)
+
 # fibonacci_series
 
 Hello Coders,
