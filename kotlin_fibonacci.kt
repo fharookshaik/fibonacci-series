@@ -1,8 +1,10 @@
 import java.math.BigInteger
 import java.util.Scanner
 
-
-fun main(args: Array<String>) {
+/**
+ * Main function that asks for the number of members to show and print them.
+ */
+fun main() {
     print("Enter a number of members in series:")
     val input = Scanner(System.`in`)
     val number = input.nextInt()
