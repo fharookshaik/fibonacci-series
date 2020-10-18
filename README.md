@@ -13,11 +13,11 @@ A series of numbers in which each number (Fibonacci number) is the sum of the tw
 
 The Fibonacci numbers can easily obtained by using the following formula:
 
-      T_n = T_n-1 + T_n-2 
+      Tn = Tn-1 + Tn-2 
 where  
-   - T_n = current term.
-   - T_n-1 = preceeding term.
-   - T_n-2 = second preceeding term.
+   - Tn = current term.
+   - Tn-1 = preceeding term.
+   - Tn-2 = second preceeding term.
 
 This gives us the following sequence that goes to infinity:
 
