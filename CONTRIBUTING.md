@@ -38,6 +38,22 @@
 **8.** Create a pull Request
  - If you go to your repository on GitHub, you’ll see a <button>Compare & pull request</button> button. Click on that button. We'll review your code and merge it if it passes all the tests.
 
-**9.** Upon successfull contribution add your name in the [Contributors.md](Contributors.md) file. 
+**9.** Upon successfull contribution add your name in the [Contributors.md](Contributors.md) file.
 
-Happy Coding !!!
+# Expected Output
+
+**Your respective code should ask the user how many fibonacii terms should be printed.**
+
+**Atleast the code return 100 terms.** 
+
+**Important Note: Attatch the working code screenshot next to the code**
+
+#
+
+<div align="center">
+
+## Happy Coding !!
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+<div>
