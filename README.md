@@ -5,7 +5,7 @@
 
 Hello Coders,
 
-This repository is mainly targeted to collect program's in different programming languages of the famous Fibonacci series.
+This repository is mainly targeted to collect program's in various programming languages of the famous Fibonacci series.
 
 ## What is fibonacci series
 
@@ -34,7 +34,7 @@ Wanna Contribute to this repository.
 ## Hacktoberfest 2020
 
 People can contribute to this repository in the hacktoberfest month for cool grabs and to win a T-Shirt.
- - In order to win the perks, One needs to finish 4 pull requests(PR).
+ - In order to win the goodies, One needs to finish 4 pull requests(PR).
  
  
  
