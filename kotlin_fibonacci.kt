@@ -13,12 +13,13 @@ fun main() {
     var b = BigInteger("1")
 
     println(a)
+    println(b)
 
     while(count < number - 2) {
         val aux = a.add(b)
         println(aux)
-        b = aux
         a = b
+        b = aux
         count++
     }
 }
