@@ -1,11 +1,9 @@
-package milestone6;
-
 import java.util.Scanner;
+import java.math.BigInteger;
 
-public class JavaFibonacci {
+public class Java_fibonacci {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
          Scanner sc=new Scanner(System.in);
          System.out.println("Enter a number of members in series: ");
          int n=sc.nextInt();
@@ -18,8 +16,8 @@ public class JavaFibonacci {
          {
             BigInteger c=new BigInteger(a.add(b).toString());
             System.out.print(c +"\n ");
-            b=c;
             a=b;
+            b=c;
             count++;
          }
 	}
