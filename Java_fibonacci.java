@@ -6,21 +6,23 @@ public class JavaFibonacci {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-         Scanner sc=new Scanner(System.in);
-         System.out.println("Enter a number of members in series: ");
-         int n=sc.nextInt();
-         int count=0;
-      
-        BigInteger a=new BigInteger("0");
-        BigInteger b=new BigInteger("1");
-        System.out.print(a+"\n "+b+"\n ");
-        while(count<(n-2))
-         {
-            BigInteger c=new BigInteger(a.add(b).toString());
-            System.out.print(c +"\n ");
-            b=c;
-            a=b;
-            count++;
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+  
+      int a = 0;
+      int b = 1;
+       
+       System.out.print(a + " ");
+       System.out.print(b + " ");
+     for(int i =0; i<n-2; i++){
+  
+  
+       int c = a + b;
+  
+        System.out.print(c + " ");
+        a = b;
+        b = c;
+  
          }
 	}
 
