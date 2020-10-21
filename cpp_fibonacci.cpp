@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int i, n, t1 = 0, t2 = 1git ;
+    int i, n, t1 = 0, t2 = 1 ;
    cout<<"Enter the number of terms: ";
    cin>>n;
     cout<<"Fibonacci Series: "<<endl;
