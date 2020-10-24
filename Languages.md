@@ -9,10 +9,10 @@ Hello Coder!!
 
 ## Code already developed in this programming language.
 
-1. Python
-2. C
-3. Go
-4. Java
-5. Ruby
-6. Kotlin
-7. C++
+Python
+C
+Go
+Java
+Ruby
+Kotlin
+C++
