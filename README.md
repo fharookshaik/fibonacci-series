@@ -1,10 +1,13 @@
+[![Open Source Helpers](https://www.codetriage.com/fharookshaik/fibonacci_series/badges/users.svg)](https://www.codetriage.com/fharookshaik/fibonacci_series)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b283ca7f4a5e4c92a9109b4819477b31)](https://www.codacy.com/gh/fharookshaik/fibonacci-series/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fharookshaik/fibonacci-series&amp;utm_campaign=Badge_Grade)
+
 # fibonacci_series
 
 Hello Coders,
 
 This repository is mainly targeted to collect program's in different programming languages of the famous Fibonacci series.
 
-## What is fibonacci series though?
+## What is fibonacci series
 
 A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers is called as the Fibonacci Series.
 
@@ -47,6 +50,7 @@ People can contribute to this repository in the hacktoberfest month for cool gra
 
  
 ## Happy Coding !!
+
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 

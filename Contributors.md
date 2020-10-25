@@ -1,7 +1,12 @@
 # Contributors
 
 Add your name at the end of the list after Successfull contribution.
-
-1. fharookshaik
-2. CozyDoomer
-3. KwehDev
+ 
+fharookshaik
+cozyDoomer
+AasthaGoyalgit
+thomaspimentel
+avk29
+nlaert
+akshaya-9
+KwehDev
