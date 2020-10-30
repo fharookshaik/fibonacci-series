@@ -16,3 +16,4 @@ Ruby
 Kotlin
 C++
 TypeScript
+Javascript
