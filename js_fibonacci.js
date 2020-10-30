@@ -3,7 +3,7 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-readline.question("Enter the number of Terms: ", num => {
+readline.question("Enter the number of Terms: ", (num) => {
     let num1 = 0, num2 = 1, tmp;
 
     for(var i=0;i<num;i++){
