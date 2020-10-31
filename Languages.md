@@ -8,11 +8,11 @@ Hello Coder!!
 
 ## Code already developed in this programming language.
 
-Python
-C
-Go
-Java
-Ruby
-Kotlin
-C++
-TypeScript
+- Python
+- C
+- Go
+- Java
+- Ruby
+- Kotlin
+- C++
+- TypeScript
