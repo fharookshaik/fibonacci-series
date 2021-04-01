@@ -13,6 +13,7 @@ Hello Coder!!
 - Go
 - Java
 - Ruby
+- Rust
 - Kotlin
 - C++
 - TypeScript
