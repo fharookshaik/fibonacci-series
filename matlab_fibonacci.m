@@ -5,10 +5,11 @@ f(2)=1;
 
 for i = 3 : n
     f(i) = f(i-1) + f(i-2);         //loop till n
+    fprintf('%d',f(i))            //display as float
     
 end 
 
-fprintf('%d',f(n))            //display as float
+
 
 
 
