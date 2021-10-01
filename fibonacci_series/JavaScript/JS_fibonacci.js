@@ -1,6 +1,6 @@
 // program to generate fibonacci series up to n terms in JavaScript
 
-// take input from the user : n
+// take input from the user
 const number = parseInt(prompt("Enter the number of terms: "));
 //Base Cases
 let num1 = 0, num2 = 1; 
