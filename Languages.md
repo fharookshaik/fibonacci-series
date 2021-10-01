@@ -18,3 +18,5 @@ Hello there!!
 - C++
 - TypeScript
 - MATLAB
+- Bash
+- C#
