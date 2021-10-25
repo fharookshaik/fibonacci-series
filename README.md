@@ -1,5 +1,5 @@
 [![Open Source Helpers](https://www.codetriage.com/fharookshaik/fibonacci_series/badges/users.svg)](https://www.codetriage.com/fharookshaik/fibonacci_series)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b283ca7f4a5e4c92a9109b4819477b31)](https://www.codacy.com/gh/fharookshaik/fibonacci-series/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fharookshaik/fibonacci-series&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c4bfaf07f67845f6b422aa5fdcbb989a)](https://www.codacy.com/gh/fharookshaik/fibonacci-series/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fharookshaik/fibonacci-series&amp;utm_campaign=Badge_Grade)
 
 # fibonacci_series
 
@@ -31,7 +31,7 @@ Wanna Contribute to this repository.
 
 **Contribute to this repository for the Hacktoberfest2020.** 
 
-## Hacktoberfest 2020
+## Hacktoberfest 2021
 
 People can contribute to this repository in the hacktoberfest month for cool grabs and to win a T-Shirt.
  - In order to win the goodies, One needs to finish 4 pull requests(PR).
