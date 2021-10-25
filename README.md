@@ -31,7 +31,7 @@ Wanna Contribute to this repository.
 
 **Contribute to this repository for the Hacktoberfest2020.** 
 
-## Hacktoberfest 2020
+## Hacktoberfest 2021
 
 People can contribute to this repository in the hacktoberfest month for cool grabs and to win a T-Shirt.
  - In order to win the goodies, One needs to finish 4 pull requests(PR).
