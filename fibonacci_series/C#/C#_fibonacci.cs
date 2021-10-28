@@ -1,6 +1,6 @@
 using System;
 
-public class FibonacciExample
+static class FibonacciExample
 {
 	public static void Main(string[] args)
 	{
@@ -9,7 +9,7 @@ public class FibonacciExample
 		var secondTerm = 1;
 
 		// show a prompt to the user to enter a number
-		Console.WriteLine("How many terms would you like?");
+		// Console.WriteLine("How many terms would you like?");
 
 		// take the input from the user, out parameter will hold the value
 		if (int.TryParse(Console.ReadLine(), out var numberOfTerms))
@@ -17,11 +17,11 @@ public class FibonacciExample
 			// show series only if number of terms is greater than zero (positive)
 			if (numberOfTerms > 0)
 			{
-				Console.WriteLine($"Fibonacci Series with {numberOfTerms} terms:");
+				// Console.WriteLine($"Fibonacci Series with {numberOfTerms} terms:");
 
 				// TODO needs some logic when user only wants one or two terms!!
 				// print the first and the second term first
-				Console.Write($"{firstTerm}, {secondTerm}, ");
+				// Console.Write($"{firstTerm}, {secondTerm}, ");
 				
 				// print the rest of the terms one by one
 				for (var termsPrinted = 2; termsPrinted < numberOfTerms; ++termsPrinted)
