@@ -1,11 +1,11 @@
 [![Open Source Helpers](https://www.codetriage.com/fharookshaik/fibonacci_series/badges/users.svg)](https://www.codetriage.com/fharookshaik/fibonacci_series)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b283ca7f4a5e4c92a9109b4819477b31)](https://www.codacy.com/gh/fharookshaik/fibonacci-series/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fharookshaik/fibonacci-series&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c4bfaf07f67845f6b422aa5fdcbb989a)](https://www.codacy.com/gh/fharookshaik/fibonacci-series/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fharookshaik/fibonacci-series&amp;utm_campaign=Badge_Grade)
 
 # fibonacci_series
 
 Hello Coders,
 
-This repository is mainly targeted to collect program's in different programming languages of the famous Fibonacci series.
+This repository is mainly targeted to collect program's in various programming languages of the famous Fibonacci series.
 
 ## What is fibonacci series
 
@@ -13,11 +13,11 @@ A series of numbers in which each number (Fibonacci number) is the sum of the tw
 
 The Fibonacci numbers can easily obtained by using the following formula:
 
-      T_n = T_n-1 + T_n-2 
+      Tn = Tn-1 + Tn-2 
 where  
-   - T_n = current term.
-   - T_n-1 = preceeding term.
-   - T_n-2 = second preceeding term.
+   - Tn = current term.
+   - Tn-1 = preceeding term.
+   - Tn-2 = second preceeding term.
 
 This gives us the following sequence that goes to infinity:
 
@@ -31,10 +31,10 @@ Wanna Contribute to this repository.
 
 **Contribute to this repository for the Hacktoberfest2020.** 
 
-## Hacktoberfest 2020
+## Hacktoberfest 2021
 
 People can contribute to this repository in the hacktoberfest month for cool grabs and to win a T-Shirt.
- - In order to win the perks, One needs to finish 4 pull requests(PR).
+ - In order to win the goodies, One needs to finish 4 pull requests(PR).
  
  
  
