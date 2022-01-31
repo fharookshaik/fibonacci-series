@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RecursionFibonacci{
+class FibonacciExampleRecursion{
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
@@ -9,8 +9,7 @@ public class RecursionFibonacci{
 
         // take the input, using BigInteger to virtually store very large integer numbers
         int n = sc.nextInt();
-        int fib = fib(n);
-        System.out.println(n);
+        System.out.println(fib(n));
 
 
     }
