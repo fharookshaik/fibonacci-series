@@ -16,24 +16,23 @@ section .text
 
 _start:
 	; Prints out the initial greeting and question
-	mov rax,4            	; The system call for write (sys_write)
-	mov rbx,1            	; File descriptor 1 - standard output
-	mov rcx,greet        	; Put the offset of hello in ecx
-	mov rdx,greetLen     	; helloLen is a constant, so we don't need to say
-	                     	;  mov edx,[helloLen] to get it's actual value
-	int 80h              ; Call the kernel
+	mov rax,4            	
+	mov rbx,1            	
+	mov rcx,greet        	
+	mov rdx,greetLen     	
+	int 80h
 
 	; Calling scanf for a decimal input
-	mov rsi, inp 			; address of integer1 (second parameter)
-   	mov rdi, fmtin 			; arguments are right to left (first parameter)
+	mov rsi, inp
+   	mov rdi, fmtin
    	mov	rax, 0
    	call scanf
 
 	; Print the first and second value
 	mov rdi, 0
-    call print_value
+    call _print_value
 	mov rdi, 1
-    call print_value
+    call _print_value
 
    	; Move the input in the loop counter rcx
    	mov rcx, qword [inp]
@@ -43,7 +42,7 @@ _start:
 	mov rax, 0
 	mov rbx, 1
 
-.loop
+_loop:
 	; calc the new value in rdx and shift the rest to rax and rbx
 	mov rdx, rax
 	add rdx, rbx
@@ -56,18 +55,18 @@ _start:
 
 	; Print the current value
 	mov rdi, rdx
-    call print_value
+    call _print_value
 
     ; Restore the register
     pop rax
 	pop rcx
 
-	loop .loop
+	loop _loop
 
-	call exit
+	call _exit
 
-; https://www.mourtada.se/calling-functions-in-x86-assembly/
-print_value:
+; from https://www.mourtada.se/calling-functions-in-x86-assembly/
+_print_value:
    	push rbp
     mov rbp, rsp
 
@@ -80,7 +79,7 @@ print_value:
     mov rsp, rbp
     pop rbp
     ret
-exit:
+_exit:
     mov rdi, 0 ; exit code 0
     mov rax, 60 ; system call for exit
     syscall
