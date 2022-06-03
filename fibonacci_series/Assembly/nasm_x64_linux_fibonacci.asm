@@ -7,9 +7,9 @@ extern scanf
 section .data
 	greet:     	db 'Hello! How many terms would you like in the series?: ',10, 0    
 	greetLen:  	equ $-greet
-    fmtout:    	db "%llu", 10, 0
-    fmtin: 		db "%d", 0
-    inp: times 8 db 0 ; 64-bits integer = 8 bytes
+	fmtout:    	db "%llu", 10, 0
+	fmtin: 		db "%d", 0
+	inp: times 8 db 0 ; 64-bits integer = 8 bytes
 
 section .text
 	global _start
@@ -24,21 +24,21 @@ _start:
 
 	; Calling scanf for a decimal input
 	mov rsi, inp
-   	mov rdi, fmtin
-   	mov	rax, 0
-   	call scanf
+	mov rdi, fmtin
+	mov	rax, 0
+	call scanf
 
 	; Print the first and second value
 	mov rdi, 0
-    call _print_value
+	call _print_value
 	mov rdi, 1
-    call _print_value
+	call _print_value
 
-   	; Move the input in the loop counter rcx
-   	mov rcx, qword [inp]
-   	sub rcx, 2
+	; Move the input in the loop counter rcx
+	mov rcx, qword [inp]
+	sub rcx, 2
 
-   	; Initialize our first two values
+	; Initialize our first two values
 	mov rax, 0
 	mov rbx, 1
 
@@ -55,10 +55,10 @@ _loop:
 
 	; Print the current value
 	mov rdi, rdx
-    call _print_value
+	call _print_value
 
-    ; Restore the register
-    pop rax
+	; Restore the register
+	pop rax
 	pop rcx
 
 	loop _loop
@@ -67,19 +67,19 @@ _loop:
 
 ; from https://www.mourtada.se/calling-functions-in-x86-assembly/
 _print_value:
-   	push rbp
-    mov rbp, rsp
+	push rbp
+	mov rbp, rsp
 
-    push rdi
-    mov	rdi, fmtout
-    pop	rsi
-    mov	rax, 0
-    call printf wrt ..plt
+	push rdi
+	mov	rdi, fmtout
+	pop	rsi
+	mov	rax, 0
+	call printf wrt ..plt
 
-    mov rsp, rbp
-    pop rbp
-    ret
+	mov rsp, rbp
+	pop rbp
+	ret
 _exit:
-    mov rdi, 0 ; exit code 0
-    mov rax, 60 ; system call for exit
-    syscall
+	mov rdi, 0 ; exit code 0
+	mov rax, 60 ; system call for exit
+	syscall
