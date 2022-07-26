@@ -8,4 +8,4 @@ Function fibonacci($n) {
 
 $n = Read-Host -Prompt "Enter a number: ";
 $result = fibonacci($n);
-Write-Host "The fibonacci series $result";
+Write-Output "The fibonacci series $result";
