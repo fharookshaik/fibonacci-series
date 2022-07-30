@@ -18,4 +18,5 @@ Hello there!!
 - C++
 - TypeScript
 - MATLAB
+- Assembly
 - Scheme
