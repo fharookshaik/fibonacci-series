@@ -19,3 +19,4 @@ Hello there!!
 - TypeScript
 - MATLAB
 - Scheme
+- Scala
