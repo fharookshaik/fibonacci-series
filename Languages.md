@@ -20,4 +20,3 @@ Hello there!!
 - MATLAB
 - Scheme
 - Scala
-- Swift
