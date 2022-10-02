@@ -7,8 +7,8 @@ func fibonacci(num: Int) -> Int {
 
 print("Enter the number of elements:")
 let number = readLine()
-var num_int=Int(number!)
+var numInt=Int(number!)
 var iterator=0
-while(num_int!>=iterator) {
+while numInt!>=iterator {
 	print(fibonacci(num: iterator))
 	iterator+=1 }
