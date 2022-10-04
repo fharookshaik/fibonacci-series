@@ -11,6 +11,5 @@ def Fibonacci(n):
         return 1
     else:
         return (Fibonacci(n-1) + Fibonacci(n-2))
-num=int(input('Enter range: '))
-for x in range(num):
+for x in range(10):
     print(Fibonacci(x),end=' ')
