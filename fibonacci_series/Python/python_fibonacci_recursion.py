@@ -1,17 +1,20 @@
 # Recursive fibonnaci code
 # this algorithm uses recursion to find the nth term in a fibonacci series
 
-
-def fibonacci(n):
-    if n <= 0:
-        print("Wrong Input!")
-    elif n == 1:
+def Fibonacci(n):
+    '''This function generate fibonacci series'''
+    # Check if input is less than 0 then it will print incorrect input
+    if n < 0:
+        print("Incorrect input")
+    # Check if n is 0 then it will return 0
+    elif n == 0:
         return 0
-    elif n == 2:
+    # Check if n is 1,2  it will return 1
+    elif n == 1 or n == 2:
         return 1
     else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+        return (Fibonacci(n-1) + Fibonacci(n-2))
 
-
-num = int(input("Enter the nth term: "))
-print(fibonacci(num))
+num=int(input('Enter range: '))
+for x in range(num):
+    print(Fibonacci(x),end=' ')
