@@ -1,6 +1,3 @@
-# Recursive fibonnaci code
-# this algorithm uses recursion to find the nth term in a fibonacci series
-
 def Fibonacci(n):
     '''This function generate fibonacci series'''
     # Check if input is less than 0 then it will print incorrect input
@@ -14,7 +11,6 @@ def Fibonacci(n):
         return 1
     else:
         return (Fibonacci(n-1) + Fibonacci(n-2))
-
 num=int(input('Enter range: '))
 for x in range(num):
     print(Fibonacci(x),end=' ')
