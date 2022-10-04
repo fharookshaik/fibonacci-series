@@ -7,7 +7,6 @@ Hello there!!
 - List of [programming languages](https://en.wikipedia.org/wiki/List_of_programming_languages)
 
 ## Code already developed in this programming language.
-
 - Python
 - C
 - Go
@@ -20,3 +19,4 @@ Hello there!!
 - MATLAB
 - Scheme
 - Scala
+-  Lua
