@@ -6,5 +6,4 @@ def fib( n):
 		temp = res[i] + res[i-1]
 		res[i+1] = temp
 	return list(res.values())[-1]
-n=int(input())
-fib(n)
+fib(int(input()))
