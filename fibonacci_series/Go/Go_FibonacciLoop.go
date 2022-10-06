@@ -1,7 +1,11 @@
 package main
 
+
+
 //importing fmt package for formatted I/O.
 import "fmt"
+
+
 
 //fib array stores previously calculated values of the series
 //Time Complexity: O(N) 
@@ -13,6 +17,8 @@ func fibonnaci(x int) []int {
 	}
 	return fib
 }
+
+
 //example: go run Fibonacci_loop.go
 func main() {
 	var num int
