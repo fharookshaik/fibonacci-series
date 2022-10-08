@@ -20,3 +20,10 @@ Hello there!!
 - MATLAB
 - Scheme
 - Scala
+- Javascript
+- C#
+- Bash
+- R
+- Powershell Script
+- Miranda
+- PHP
