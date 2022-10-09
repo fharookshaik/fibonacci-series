@@ -1,3 +1,4 @@
+//The package main tells the Go compiler that the package should compile as an executable program instead of a shared library
 package main
 
 
