@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Fibonachi.exe" version="1.0.0.0" publicKeyToken="7a751f53b9a443a0" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Fibonachi" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Fibonachi.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Fibonachi.exe" size="9208">
+      <assemblyIdentity name="Fibonachi" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qEI1jMOnJgtxSrZwKd82mNwCEZF2mhHt8c/uZLoHrJw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Fibonachi.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-MAF0FMO\Giorgos D" issuerKeyHash="01aba16428ea0e8528f3656a943558a2dc525726" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>L9uAKXF9m9oxfvq+m5MCAc3yHFVFwZqej+tCiTjzfC8=</DigestValue></Reference></SignedInfo><SignatureValue>nyFRhe/6cmW/XdpX+ATEKqbfrZtUYcjHITFXOp9uHgGAEWM094Iq/ZTazdmR4fnaqw2OHKL6r2k9dBjpueibPOUDscSkqyccP338UCd2VdcXgMmikN242Ta+Mx1cDhEqSQd5K4uyPiJhH+sQuGexLyH0YUZn4qPtqCR+keW0+78=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xVp2apIHR+m7nvUH+ms58B6Alwr3KgLS69CIXGOiVFfogA1Xs6PMvNd4Gdh7PvCsXn7HYDmuHVIAwIUmo82IwZI95zuvsDCxkG8T6uF7W+Erm5Az1RFfIPDkhP8snXGljUH9IuzhLPUAQ8hA+llvsatbvV4wj8thdTu7CDcVH0k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2f7cf3388942eb8f9e9ac145551cf2cd0102939bbefa7e31da9b7d712980db2f" Description="" Url=""><as:assemblyIdentity name="Fibonachi.exe" version="1.0.0.0" publicKeyToken="7a751f53b9a443a0" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-MAF0FMO\Giorgos D</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Fw3GuoAB8jw3cnqAzSRvr5uooNtGtjpcg+k35963keQ=</DigestValue></Reference></SignedInfo><SignatureValue>lW+/xjV1OPOETMAH0tWNWcE6h/Xf+jR/tswn+xmEfhcKzGVP1UNTvO0Ojj461E4Tx7ktCrcx6Ir0Fqm+SrkCMAaPsg3K4cyGJrE7AUiAxXb+GSninZOUEmeK2V990i5erN7lYt4OAaxqg9vFQrRzLd/iNl9jnuTvzXBIFej61Mg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xVp2apIHR+m7nvUH+ms58B6Alwr3KgLS69CIXGOiVFfogA1Xs6PMvNd4Gdh7PvCsXn7HYDmuHVIAwIUmo82IwZI95zuvsDCxkG8T6uF7W+Erm5Az1RFfIPDkhP8snXGljUH9IuzhLPUAQ8hA+llvsatbvV4wj8thdTu7CDcVH0k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQXV8VDsECvL5NgYv8BxspZTANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARABFAFMASwBUAE8AUAAtAE0AQQBGADAARgBNAE8AXABHAGkAbwByAGcAbwBzACAARDAeFw0yMjEwMTQyMjMxMjNaFw0yMzEwMTUwNDMxMjNaMD0xOzA5BgNVBAMeMgBEAEUAUwBLAFQATwBQAC0ATQBBAEYAMABGAE0ATwBcAEcAaQBvAHIAZwBvAHMAIABEMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFWnZqkgdH6bue9Qf6aznwHoCXCvcqAtLr0IhcY6JUV+iADVezo8y813gZ2Hs+8KxefsdgOa4dUgDAhSajzYjBkj3nO6+wMLGQbxPq4Xtb4SubkDPVEV8g8OSE/yydcaWNQf0i7OEs9QBDyED6WW+xq1u9XjCPy2F1O7sINxUfSQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBALbUDAAZznnocvI9nCeDw8RB9Mz8vHmybcYIprfQV220JsfkVh+KAQaLFxfWt6Xpg7Q3FNH/HrYO6qBdoedQiOPEBxpT+STKRxbYc6wY3yx3XJ0EKGM2le9bmIQo3z/8IQhwC1cROEqOXx9ZUEYZfQqHb0a8Dmm8JRhWoXEBVHq5</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
