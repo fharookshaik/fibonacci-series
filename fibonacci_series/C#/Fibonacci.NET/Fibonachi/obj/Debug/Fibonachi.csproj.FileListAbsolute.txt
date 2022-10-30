@@ -1,0 +1,15 @@
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\bin\Debug\Fibonachi.exe.config
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\bin\Debug\Fibonachi.exe
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\bin\Debug\Fibonachi.pdb
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.csproj.AssemblyReference.cache
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.csproj.SuggestedBindingRedirects.cache
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.Form1.resources
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.Properties.Resources.resources
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.csproj.GenerateResource.cache
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.csproj.CoreCompileInputs.cache
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.exe
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.pdb
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\bin\Debug\Fibonachi.exe.manifest
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\bin\Debug\Fibonachi.application
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.exe.manifest
+C:\Users\Giorgos D\source\repos\Fibonachi\Fibonachi\obj\Debug\Fibonachi.application
