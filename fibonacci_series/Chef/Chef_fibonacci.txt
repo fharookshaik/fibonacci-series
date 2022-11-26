@@ -1,0 +1,33 @@
+Ice Cream a la Fibonacci.
+
+This delicious recipe yields 1 serving of cinnamon ice cream if the serving is big enough.
+Please make sure not to add the mashed banana all at once but in multiple steps (as described). This will improve the consistency of the ice cream.
+Personal Note by the chef: I recommend executing this recipe at https://tio.run/#chef if you don't have a Chef interpreter at hand. An input of n will give you the (n+2)th Fibonacci number.
+
+Ingredients.
+500 g ice cream
+1 cup mashed banana
+0 cups salt
+150 g suggar
+3 pinches cinnamon
+
+Cooking time: 25 minutes.
+
+Method.
+Take ice cream from refrigerator.
+Heat the ice cream.
+Put mashed banana into mixing bowl.
+Fold suggar into mixing bowl.
+Put cinnamon into mixing bowl. Stir for 7 minute.
+Put mashed banana into mixing bowl.
+Add salt to mixing bowl.
+Fold mashed banana into mixing bowl.
+Put suggar into mixing bowl.
+Fold salt into mixing bowl.
+Reheat the ice cream until heated.
+Put ice cream into mixing bowl. Stir for 15 minutes.
+Put mashed banana into 2nd mixing bowl.
+Pour contents of the 2nd mixing bowl into the 1st baking dish.
+Refrigerate the ice cream. Cool the ice cream until refrigerated.
+
+Serves 1.
