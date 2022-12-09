@@ -2,12 +2,12 @@ import 'dart:io';
 
 class Fibonacci {
   static Iterable getSeries(int n) {
-    var sequence = <int>[];
+    var series = <int>[];
     while (n >= 0) {
-      sequence.add(Fibonacci.getTerm(n));
+      series.add(Fibonacci.getTerm(n));
       n--;
     }
-    return sequence.reversed;
+    return series.reversed;
   }
 
   static int getTerm(int n) {
