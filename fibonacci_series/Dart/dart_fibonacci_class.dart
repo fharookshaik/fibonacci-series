@@ -1,7 +1,7 @@
 import 'dart:io';
 
 class Fibonacci {
-  static Iterable getSequence(int n) {
+  static Iterable getSeries(int n) {
     var sequence = <int>[];
     while (n >= 0) {
       sequence.add(Fibonacci.getTerm(n));
@@ -20,8 +20,8 @@ class Fibonacci {
 void main() {
   print("Testing class Fibonacci...");
 
-  print(Fibonacci.getSequence(0).toString());
-  print(Fibonacci.getSequence(1).toString());
-  print(Fibonacci.getSequence(5).toString());
-  print(Fibonacci.getSequence(12).toString());
+  print(Fibonacci.getSeries(0).toString());
+  print(Fibonacci.getSeries(1).toString());
+  print(Fibonacci.getSeries(5).toString());
+  print(Fibonacci.getSeries(12).toString());
 }
