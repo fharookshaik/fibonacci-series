@@ -4,11 +4,12 @@ def fibonacci(num):
     series = 0
     i = 0
     while i<=num:
-        print(series);
+        print(series,end=" ");
         num1 = num2;
         num2 = series;
         series = num1 + num2;
         i+= 1
 # running function after taking user input
 num = int(input('Enter how many numbers needed in Fibonacci series : '))
+print("The Fibonacci Series is: ")
 fibonacci(num)
