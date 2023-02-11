@@ -17,7 +17,7 @@ int fib() {
           first = second;
           second = result;
       }
-      printf("%zu", result); 
+      printf("%ld", result); 
     }
   return 0;
 } 
