@@ -2,8 +2,7 @@
 #include <stdint.h>
  
 int fib() {
-  int n, i;
-  int64_t first = 0, second = 1, result;
+  int n;
   printf("Please indicate the fibonacci number you would like to find: ");
   scanf("%d", &n);
   printf("The fibonaaci number at postion %d: ", n);
@@ -12,13 +11,14 @@ int fib() {
         return 0;
     }
   else {
-    for (i = 0; i < n; i++) {
+    int64_t first = 0, second = 1, result;
+    for (int i = 0; i < n; i++) {
           result = first + second;
           first = second;
           second = result;
-      } 
+      }
+      printf("%zu", result); 
     }
-  printf("%lld", result);
   return 0;
 } 
 
