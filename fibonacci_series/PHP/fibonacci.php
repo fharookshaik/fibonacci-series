@@ -18,3 +18,4 @@
     echo series($i);  
     echo "\n";  
     }  
+    ?>
