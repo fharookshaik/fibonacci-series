@@ -1,7 +1,8 @@
+package com.example.fibonacci;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class recursive_fibonacci {
+class RecursiveFibonacci  {
     public static BigInteger recursiveFibonacci(int n) {
         if (n == 0) {
             return BigInteger.ZERO;
