@@ -9,7 +9,7 @@ func fibonacci(_ number: Int, _ mem: inout [Int: Double]) -> Double {
 
   let val = fibonacci(number - 1, &mem) + fibonacci(number - 2, &mem)
   mem[number] = val
-  
+
   return val
 }
 
