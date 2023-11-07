@@ -1,6 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+func iterativeFibonacci(n int) int {
+
+	if n <= 1 {
+		return n
+	}
+	fib_min_2 := 0
+	fib_min_1 := 1
+	fib := 0
+	for i := 2; i <= n; i++ {
+		fib = fib_min_1 + fib_min_2
+		fib_min_2 = fib_min_1
+		fib_min_1 = fib
+	}
+	return fib
+
+}
 
 func recursiveFibonacci(n int) int {
 	if n <= 1 {
@@ -18,6 +38,14 @@ func main() {
 
 	fmt.Print("Fibonacci Series:\n")
 	for i := 0; i < fibNum; i++ {
-		fmt.Println(recursiveFibonacci(i))
+		nr := time.Now()
+		fr := recursiveFibonacci(i)
+		tr := time.Since(nr)
+
+		ni := time.Now()
+		fi := iterativeFibonacci(i)
+		ti := time.Since(ni)
+
+		fmt.Printf("fib(%d) == %d (%s): %d (%s) \n", i, fr, tr, fi, ti)
 	}
 }
