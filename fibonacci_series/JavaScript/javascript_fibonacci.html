@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>
+      Fibonacci Series in JavaScript (using HTML)
+    </title>
+  </head>
+  <body>
+<script>
+var n1 = 0,
+  n2 = 1,
+  next,
+  i;
+
+var num = parseInt(prompt("Enter limit for Fibonacci Series: "));
+
+document.write("Fibonacci Series: ");
+for (i = 1; i <= num; i++) {
+  document.write( n1 + " " );
+  next = n1 + n2;
+  n1 = n2;
+  n2 = next;
+}
+
+</script>
+</body>
+</html>
