@@ -1,26 +1,46 @@
 import Foundation
 
-// Function to generate Fibonacci sequence up to n terms
-func fibonacci(n: Int) -> [Int] {
-    var sequence = [0, 1]
-    
-    if n <= 1 {
-        return Array(sequence.prefix(n))
+// Recursive Fibonacci function with memoization
+func fibonacci(_ n: Int, _ mem: inout [Int: Double]) -> Double {
+    // Base cases for Fibonacci sequence
+    if n == 0 {
+        return 0 // Fibonacci(0) is 0
+    } else if n == 1 {
+        return 1 // Fibonacci(1) is 1
     }
     
-    for _ in 2..<n {
-        let nextNumber = sequence[sequence.count - 1] + sequence[sequence.count - 2]
-        sequence.append(nextNumber)
+    // Check if the value is already computed and stored in the memoization dictionary
+    if let val = mem[n] {
+        return val
     }
     
-    return sequence
+    // Calculate the Fibonacci number using recursion and store it in the memoization dictionary
+    let val = fibonacci(n - 1, &mem) + fibonacci(n - 2, &mem)
+    mem[n] = val // Store computed value for future reference
+    
+    return val
 }
 
-// Ask user for input and convert it to an integer
-print("Enter the number of terms for the Fibonacci sequence: ", terminator: "")
-if let input = readLine(), let n = Int(input) {
-    let result = fibonacci(n: n)
-    print("Fibonacci sequence up to \(n) terms: \(result)")
+// Wrapper function to initialize the memoization dictionary
+func fibonacci(_ n: Int) -> Double {
+    var mem = [Int: Double]()
+    return fibonacci(n, &mem)
+}
+
+// Main program
+print("Enter a positive number for Fibonacci sequence: ", terminator: "")
+
+if let inputStr = readLine() {
+    if let input = Int(inputStr) {
+        if input < 0 {
+            print("Please enter a non-negative integer.")
+        } else {
+            let result = fibonacci(input)
+            print("Fibonacci(\(input)) = \(result)")
+        }
+    } else {
+        print("Invalid number. Please enter an integer.")
+    }
 } else {
-    print("Invalid input. Please enter a valid integer.")
+    print("Input error. Please try again.")
 }
