@@ -1,5 +1,7 @@
-fibonacciIterative = (n) => {
-  if (n <= 1) return n;
+const fibonacciIterative = (n) => {
+  if (n <= 1) {
+    return n;
+  }
 
   let prev = 0;
   let curr = 1;
@@ -11,5 +13,3 @@ fibonacciIterative = (n) => {
   }
   return curr;
 };
-
-console.log(fibonacciIterative(9));
