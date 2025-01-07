@@ -14,6 +14,7 @@ Hello there!!
 - C++
 - Dart
 - Go
+- Haskell
 - Java
 - Javascript
 - Kotlin
