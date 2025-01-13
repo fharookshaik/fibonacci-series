@@ -14,6 +14,7 @@ Hello there!!
 - C++
 - Dart
 - Go
+- Haskell
 - Java
 - Javascript
 - Kotlin
@@ -27,4 +28,5 @@ Hello there!!
 - Rust
 - Scala
 - Scheme
+- SML
 - Typescript
