@@ -11,6 +11,13 @@ sub fibonacci {
     return $memo{$n};
 }
 
-for my $i (0..15) {
-    say "fib($i) = ", fibonacci($i);
+print "How many Fibonacci terms should be printed? ";
+chomp(my $input = <STDIN>);
+
+if ($input =~ /^\d+$/ && $input >= 1) {
+    for my $i (0 .. $input - 1) {
+        say "fib($i) = ", fibonacci($i);
+    }
+} else {
+    say "Invalid input. Please enter a positive integer.";
 }

@@ -28,3 +28,4 @@ Hello there!!
 - Scala
 - Scheme
 - Typescript
+- Perl

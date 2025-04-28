@@ -13,11 +13,13 @@ sub fibonacci {
     return $b;
 }
 
-print "Enter a number: ";
+print "How many Fibonacci terms should be printed? ";
 chomp(my $input = <STDIN>);
 
-if ($input =~ /^\d+$/) {
-    say "fib($input) = ", fibonacci($input);
+if ($input =~ /^\d+$/ && $input >= 1) {
+    for my $i (0 .. $input - 1) {
+        say "fib($i) = ", fibonacci($i);
+    }
 } else {
-    say "Invalid input. Please enter a non-negative integer.";
+    say "Invalid input. Please enter a positive integer.";
 }
