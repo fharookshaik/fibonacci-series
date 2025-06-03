@@ -17,6 +17,7 @@ Hello there!!
 - Java
 - Javascript
 - Kotlin
+- Lua
 - Matlab
 - Miranda
 - PHP
