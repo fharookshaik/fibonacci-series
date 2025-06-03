@@ -1,23 +1,31 @@
 #include <stdio.h>
-void printFibonacci(int n)
-{
-    static long long int n1 = 0, n2 = 1;
-    if(n > 0)
-    {
-        n2 = n1 + n2;
-        n1 = n2 - n1;
-        printf("%lld\n", n2);
-        printFibonacci(n - 1);
-    }
-}
+
 int main()
 {
     int n, i;
+    long double prev_prev=0, prev=1;
+
     printf("Enter the number of elements: ");
     scanf("%d", &n);
+
+    if(n <= 0) {
+        printf("Invalid number!\n");
+        return 0;
+    }
+
     printf("Fibonacci Series: \n");
+
     for(i=0; i<n && i<2; i++)
-        printf("%d\n", i); //In case n==0 or n==1, we don't always print the first two elements
-    printFibonacci(n - 2); //n-2 because 2 numbers are already printed
+        printf("%d, ", i); //In case n==0 or n==1, we don't always print the first two elements
+  
+    for(int i=0; i<n-2; i++) //n-2 because 2 numbers are already printed
+    {
+        prev += prev_prev;
+        prev_prev = prev - prev_prev;
+        printf("%0.0Lf, ", prev);
+    }
+
+    printf("\b\b \n");
+    
     return 0;
 }

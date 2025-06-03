@@ -19,7 +19,7 @@
 
             <language>_fibonacci.<extension_of_particular_language>
 
-            e.g., python_fibonacci.py or CPP_fibonacci.c or C_fibonacci.cpp
+            e.g., python_fibonacci.py or CPP_fibonacci.cpp or C_fibonacci.c
 
 **5.** Create a new program in different Programming language or *Make necessary changes to the existing code.
 
