@@ -1,0 +1,20 @@
+package java_recursive;
+import java.util.Scanner;
+class Fibonacci {
+    public static int fibonacci(int n) {
+        if (n <= 1){
+            return n;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    } 
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("How many terms would you like in the series?: ");
+        int n = input.nextInt();
+        for (int i = 0; i < n; i++){
+            System.out.print(fibonacci(i) + " ");
+        }
+        
+    }
+}
