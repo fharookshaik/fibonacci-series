@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class JavaFibonacciRecursion {
+class FibonacciExampleJava2 {
     public static int fibonacci(int n) {
         if (n <= 1){
             return n;
@@ -9,6 +9,7 @@ class JavaFibonacciRecursion {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("How many terms would you like in the series?: ");
         int n = input.nextInt();
         for (int i = 0; i < n; i++){
             System.out.print(fibonacci(i) + " ");
