@@ -14,15 +14,17 @@ Hello there!!
 - C
 - C#
 - C++
-- Carbon
+- Carbon-lang
 - Chef
 - Clojure
 - Dart
 - Elixir
+- Fish
 - Fortran
 - Go
 - Haskell
 - Java
+- JavaScript
 - Javascript
 - Julia
 - Kotlin
@@ -44,3 +46,4 @@ Hello there!!
 - Scheme
 - Swift
 - Typescript
+- Z shell
