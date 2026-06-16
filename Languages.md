@@ -46,3 +46,4 @@ Hello there!!
 - Scheme
 - Swift
 - Typescript
+- Z shell
