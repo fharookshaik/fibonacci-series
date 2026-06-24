@@ -1,12 +1,28 @@
-function[f] = fibnocci(x)
-    f(1)=0;
-    f(2)=1;
-    n=3;
-    while n<=x
-        f(n) = f(n-2)+f(n-1);
-        n=n+1;
+% Octave Fibonacci Series
+
+function [f] = fibnocci(x)
+
+    % Validate input
+    if x < 1
+        error('Input must be a positive integer');
     end
+
+    % Initialize Fibonacci series
+    f(1) = 0;
+
+    if x >= 2
+        f(2) = 1;
+    end
+
+    % Generate Fibonacci sequence
+    for n = 3:x
+        f(n) = f(n-1) + f(n-2);
+    end
+
 end
 
-z=input('Enter Number To Calculate Fibnocci : ');
-fibnocci(z)
+% Take user input
+z = input('Enter Number To Calculate Fibnocci : ');
+
+% Display result
+disp(fibnocci(z));
