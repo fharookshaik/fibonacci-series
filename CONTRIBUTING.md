@@ -1,64 +1,118 @@
-# Steps for Contribution 
+# Contributing
 
-**1.** Fork this repository. This will make you to create a copy of this repository under our github account.<br>
-**2.** Clone the forked repository by using the following command.<br>
-        
-        git clone "https://github.com/<your-github-username>/fibonacci_series"
+Thanks for contributing to the Fibonacci Series project.
 
-**3.** Create a new branch or just use the main branch
- - To create a new branch
+## 1. Fork and clone
 
-        cd fibonacci_series
-        git checkout -b <your-branch-name>
+Fork the repository, then clone your fork:
 
-**4.** Check out the [Languages.md](Languages.md) and search for the programming language that you want to code the program.
- - If the particular programming language exists, it means that someone has written the program in that language. 
-   - Don't feel down. However you can see the existing code and changes to the exsiting program is highly welcome if you write the program even simpler.
- - If you didn't find the programming language that you want to code.  
-    - Create a new file name as follows
+```bash
+git clone https://github.com/<your-github-username>/fibonacci-series.git
+cd fibonacci-series
+```
 
-            <language>_fibonacci.<extension_of_particular_language>
+## 2. Create a branch
 
-            e.g., python_fibonacci.py or CPP_fibonacci.cpp or C_fibonacci.c
+Create a focused branch for your change:
 
-**5.** Create a new program in different Programming language or *Make necessary changes to the existing code.
+```bash
+git checkout -b <short-descriptive-branch-name>
+```
 
-**6.** Update the language file by running the below command. You may need to install the latest [NodeJS](https://nodejs.org/en) to update the  [Languages.md](Languages.md) file.
-        node ./utils/updateLanguageMd.js 
+Do not work directly on `main`.
 
-**7.** Once You're are done with your changes commit them by the following commands.
+## 3. Choose a contribution
 
-        git add files-you-edited
-        git commit -m "Commit message"
+Check [Languages.md](Languages.md) and the existing folders under `fibonacci_series/`.
 
-**8.** Push your changes to Github
+You can contribute by:
 
-        git push origin <current-branch-name>
+- adding a language that is not present;
+- fixing an incorrect implementation;
+- simplifying or optimizing an existing implementation;
+- adding tests or validation;
+- improving documentation or repository tooling.
 
-        eg., if you're on main branch,
-                git push origin main 
+Duplicate implementations are acceptable when they demonstrate a meaningfully different algorithm or improve an existing solution.
 
-**9.** Create a pull Request
- - If you go to your repository on GitHub, you’ll see a <button>Compare & pull request</button> button. Click on that button. We'll review your code and merge it if it passes all the tests.
+## 4. Place code in the correct directory
 
-**10.** Upon successfull contribution add your name in the [Contributors.md](Contributors.md) file.
+Implementations should live under:
 
-***Note: If you wish to update the existing code. Attatch the schreenshot of the working code & Comment the changes you've made and Why you've update the code with a minmum two line explanation(This helps me to review your code quickly).** 
+```text
+fibonacci_series/<Language>/
+```
 
-# Expected Output
+For a new language, create a clearly named directory and source file that matches the conventions already used in the repository.
 
-**Your respective code should ask the user how many fibonacii terms should be printed.**
+Do not add generated files, editor metadata, operating-system files, binaries, or unrelated assets.
 
-**Atleast the code return 100 terms.** 
+## 5. Fibonacci convention
 
-**Important Note: Attatch the working code screenshot next to the code**
+New and updated implementations should follow:
 
-#
+```text
+F(0) = 0
+F(1) = 1
+F(n) = F(n - 1) + F(n - 2)
+```
 
-<div align="center">
+Expected first 10 terms:
 
-## Happy Coding !!
+```text
+0 1 1 2 3 5 8 13 21 34
+```
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+Avoid hard-coded output. If the language has numeric limits, document them in the source or pull request.
 
-<div>
+## 6. Update the language index
+
+If you add or rename a language directory, update [Languages.md](Languages.md).
+
+The repository currently includes a helper script:
+
+```bash
+node ./utils/updateLanguageMd.js
+```
+
+If you use it, review the generated changes before committing them.
+
+## 7. Test your change
+
+Run the implementation locally and verify that it produces the expected sequence.
+
+Where automated tests or CI checks exist, they must pass before the pull request can be merged.
+
+Screenshots are not required unless they are useful for explaining a platform-specific problem.
+
+## 8. Commit and push
+
+```bash
+git add <files-you-changed>
+git commit -m "Describe the change"
+git push origin <your-branch-name>
+```
+
+## 9. Open a pull request
+
+Open a pull request against `main` and include:
+
+- what you changed;
+- why you changed it;
+- how you tested it;
+- any language/runtime requirements.
+
+Keep pull requests focused. Unrelated cleanup should be submitted separately.
+
+## Review expectations
+
+A contribution may be requested to change if it:
+
+- produces an incorrect Fibonacci sequence;
+- duplicates an existing implementation without adding value;
+- adds unrelated or generated files;
+- cannot be reproduced;
+- introduces unnecessary dependencies;
+- mixes unrelated changes in one pull request.
+
+Contributor attribution is handled through Git history and GitHub. Manual edits to `Contributors.md` are not required for every contribution.

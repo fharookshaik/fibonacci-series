@@ -1,56 +1,57 @@
-[![Open Source Helpers](https://www.codetriage.com/fharookshaik/fibonacci_series/badges/users.svg)](https://www.codetriage.com/fharookshaik/fibonacci_series)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c4bfaf07f67845f6b422aa5fdcbb989a)](https://www.codacy.com/gh/fharookshaik/fibonacci-series/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fharookshaik/fibonacci-series&amp;utm_campaign=Badge_Grade)
+# Fibonacci Series
 
-# fibonacci_series
+A collection of Fibonacci sequence implementations across programming languages.
 
-Hello Coders,
+The project is being actively cleaned up and modernized so that contributions are consistent, testable, and easier to review.
 
-This repository is mainly targeted to collect program's in various programming languages of the famous Fibonacci series.
+## Definition
 
-## What is fibonacci series
+This repository uses the conventional zero-indexed Fibonacci sequence:
 
-A series of numbers in which each number (Fibonacci number) is the sum of the two preceding numbers is called as the Fibonacci Series.
+```text
+F(0) = 0
+F(1) = 1
+F(n) = F(n - 1) + F(n - 2)
+```
 
-The Fibonacci numbers can easily obtained by using the following formula:
+The sequence begins:
 
-      Tn = Tn-1 + Tn-2 
-where  
-   - Tn = current term.
-   - Tn-1 = preceeding term.
-   - Tn-2 = second preceeding term.
+```text
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+```
 
-This gives us the following sequence that goes to infinity:
+## Repository structure
 
-        1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ....
+Language implementations live under:
 
-## Contribution
+```text
+fibonacci_series/<Language>/
+```
 
-Wanna Contribute to this repository.
+See [Languages.md](Languages.md) for the current language list.
 
-- View [CONTRIBUTION.md](https://github.com/fharookshaik/fibonacci_series/blob/main/CONTRIBUTING.md)
+## Contributing
 
-**Contribute to this repository for the Hacktoberfest2020.** 
+Contributions are welcome for:
 
-## Hacktoberfest 2021
+- new language implementations;
+- fixes to existing implementations;
+- simpler or more efficient algorithms;
+- tests and validation;
+- documentation and repository maintenance.
 
-People can contribute to this repository in the hacktoberfest month for cool grabs and to win a T-Shirt.
- - In order to win the goodies, One needs to finish 4 pull requests(PR).
- 
- 
- 
-**Stuck with Queries. Feel free to contact me** 
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
-<div align="center">
+## Project direction
 
-<a href="https://www.linkedin.com/in/fharook-shaik-7a757b181/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a> &nbsp; 
- 
-<div align="center" width="50">
+The repository is being modernized around a few goals:
 
-</div>
+- consistent structure across languages;
+- reproducible output and documented assumptions;
+- automated validation through GitHub Actions;
+- multiple algorithm variants where useful;
+- clear contributor and review guidelines.
 
- 
-## Happy Coding !!
+## License
 
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-
+See [LICENSE](LICENSE).

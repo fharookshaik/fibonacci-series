@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Common build/cache output
+__pycache__/
+*.py[cod]
+node_modules/
+dist/
+build/
+target/

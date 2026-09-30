@@ -1,4 +1,3 @@
-
 /*codacy does not allow console logging , but there is no other alternative for this since I am not running it on any browser.
 If at all this needs to be passed as 0 issues on codacy , I will need to remove all the console.log() and then there will be simply no 
 output although the function will run all fine.*/
