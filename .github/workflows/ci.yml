@@ -1,0 +1,29 @@
+name: Repository CI
+
+on:
+  push:
+    branches:
+      - main
+      - chore/repository-reboot
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Validate repository structure
+        run: python utils/validate_repository.py
