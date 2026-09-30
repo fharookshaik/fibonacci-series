@@ -1,31 +1,33 @@
-use std::io;
-
-fn fib(n: u128) -> u128 {
-    let mut a: u128 = 0;
-    let mut b: u128 = 1;
-
-    for _ in 0..n {
-        let temp = b;
-        b += a;
-        a = temp;
-    }
-    a
-}
+use std::io::{self, Read};
+use std::process;
 
 fn main() {
-    println!("How many fibonacci terms should be printed?");
+    let mut input = String::new();
 
-    let mut n: String = String::new();
-    io::stdin()
-        .read_line(&mut n)
-        .expect("Failed to read input");
-
-    let n: u128 = n
-        .trim()
-        .parse()
-        .expect("Please enter a valid number");
-
-    for i in 1..(n+1) {
-        println!("{}", fib(i));
+    if io::stdin().read_to_string(&mut input).is_err() {
+        process::exit(2);
     }
+
+    let n: usize = match input.trim().parse() {
+        Ok(value) if value <= 185 => value,
+        _ => process::exit(2),
+    };
+
+    let mut a: u128 = 0;
+    let mut b: u128 = 1;
+    let mut terms = Vec::with_capacity(n);
+
+    for _ in 0..n {
+        terms.push(a.to_string());
+
+        let next = match a.checked_add(b) {
+            Some(value) => value,
+            None => process::exit(2),
+        };
+
+        a = b;
+        b = next;
+    }
+
+    println!("{}", terms.join(" "));
 }

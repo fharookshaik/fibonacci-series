@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "implementations": [
+    {
+      "language": "Python",
+      "source": "fibonacci_series/Python/python_fibonacci.py",
+      "run": ["python3", "{source}"]
+    },
+    {
+      "language": "JavaScript",
+      "source": "fibonacci_series/JavaScript/javascript_fibonacci.js",
+      "run": ["node", "{source}"]
+    },
+    {
+      "language": "C",
+      "source": "fibonacci_series/C/C_fibonacci.c",
+      "compile": ["gcc", "-std=c11", "-O2", "-Wall", "-Wextra", "-Werror", "-pedantic", "{source}", "-o", "{binary}"],
+      "run": ["{binary}"]
+    },
+    {
+      "language": "C++",
+      "source": "fibonacci_series/C++/cpp_fibonacci.cpp",
+      "compile": ["g++", "-std=c++17", "-O2", "-Wall", "-Wextra", "-Werror", "-pedantic", "{source}", "-o", "{binary}"],
+      "run": ["{binary}"]
+    },
+    {
+      "language": "Java",
+      "source": "fibonacci_series/Java/Java_fibonacci.java",
+      "compile": ["javac", "-d", "{build_dir}", "{source}"],
+      "run": ["java", "-cp", "{build_dir}", "FibonacciExampleJava"]
+    },
+    {
+      "language": "Go",
+      "source": "fibonacci_series/Go/Go_fibonacci.go",
+      "compile": ["go", "build", "-o", "{binary}", "{source}"],
+      "run": ["{binary}"]
+    },
+    {
+      "language": "Rust",
+      "source": "fibonacci_series/Rust/rust_fibonacci.rs",
+      "compile": ["rustc", "-O", "-D", "warnings", "{source}", "-o", "{binary}"],
+      "run": ["{binary}"]
+    },
+    {
+      "language": "Haskell",
+      "source": "fibonacci_series/Haskell/Haskell_fibonacci.hs",
+      "compile": ["ghc", "-O2", "-Wall", "-Werror", "-outputdir", "{build_dir}", "-o", "{binary}", "{source}"],
+      "run": ["{binary}"]
+    }
+  ]
+}

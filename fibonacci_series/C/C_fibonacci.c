@@ -1,31 +1,27 @@
 #include <stdio.h>
 
-int main()
-{
-    int n, i;
-    long double prev_prev=0, prev=1;
+int main(void) {
+    long n;
 
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-
-    if(n <= 0) {
-        printf("Invalid number!\n");
-        return 0;
+    if (scanf("%ld", &n) != 1 || n < 0 || n > 94) {
+        return 2;
     }
 
-    printf("Fibonacci Series: \n");
+    unsigned long long a = 0;
+    unsigned long long b = 1;
 
-    for(i=0; i<n && i<2; i++)
-        printf("%d, ", i); //In case n==0 or n==1, we don't always print the first two elements
-  
-    for(int i=0; i<n-2; i++) //n-2 because 2 numbers are already printed
-    {
-        prev += prev_prev;
-        prev_prev = prev - prev_prev;
-        printf("%0.0Lf, ", prev);
+    for (long i = 0; i < n; ++i) {
+        if (i > 0) {
+            putchar(' ');
+        }
+
+        printf("%llu", a);
+
+        unsigned long long next = a + b;
+        a = b;
+        b = next;
     }
 
-    printf("\b\b \n");
-    
+    putchar('\n');
     return 0;
 }

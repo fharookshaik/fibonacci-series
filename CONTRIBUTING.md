@@ -47,9 +47,9 @@ For a new language, create a clearly named directory and source file that matche
 
 Do not add generated files, editor metadata, operating-system files, binaries, or unrelated assets.
 
-## 5. Fibonacci convention
+## 5. Fibonacci convention and interface
 
-New and updated implementations should follow:
+New canonical implementations should follow:
 
 ```text
 F(0) = 0
@@ -57,33 +57,53 @@ F(1) = 1
 F(n) = F(n - 1) + F(n - 2)
 ```
 
-Expected first 10 terms:
+The machine-testable interface is:
+
+- read one non-negative integer `N` from standard input;
+- print exactly the first `N` Fibonacci terms;
+- separate terms by spaces;
+- print a trailing newline;
+- do not print prompts or explanatory text to standard output;
+- return a non-zero exit status for malformed or negative input.
+
+For input `10`, expected output is:
 
 ```text
 0 1 1 2 3 5 8 13 21 34
 ```
 
-Avoid hard-coded output. If the language has numeric limits, document them in the source or pull request.
+If a language has numeric limits, reject unsupported values rather than silently overflowing.
 
-## 6. Update the language index
+## 6. Update repository metadata
 
 If you add or rename a language directory, update [Languages.md](Languages.md).
 
-The repository currently includes a helper script:
+The repository includes:
 
 ```bash
 node ./utils/updateLanguageMd.js
 ```
 
-If you use it, review the generated changes before committing them.
+If you add a canonical CI-tested implementation, also add its compile/run definition to [tests/implementations.json](tests/implementations.json).
 
 ## 7. Test your change
 
-Run the implementation locally and verify that it produces the expected sequence.
+Run the repository checks:
 
-Where automated tests or CI checks exist, they must pass before the pull request can be merged.
+```bash
+python utils/validate_repository.py
+python utils/test_implementations.py
+```
 
-Screenshots are not required unless they are useful for explaining a platform-specific problem.
+The second command requires the toolchain for every CI-verified language. If you only have one runtime installed, use:
+
+```bash
+python utils/test_implementations.py --language Python
+```
+
+Replace `Python` with the configured language name.
+
+GitHub Actions runs the complete test suite before merge.
 
 ## 8. Commit and push
 
@@ -109,6 +129,7 @@ Keep pull requests focused. Unrelated cleanup should be submitted separately.
 A contribution may be requested to change if it:
 
 - produces an incorrect Fibonacci sequence;
+- violates the standard input/output contract without a documented reason;
 - duplicates an existing implementation without adding value;
 - adds unrelated or generated files;
 - cannot be reproduced;

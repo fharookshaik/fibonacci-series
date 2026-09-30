@@ -1,8 +1,14 @@
-fibonacci :: Integer -> [Integer]
-fibonacci n = map fst $ take (fromIntegral n) $ iterate (\(a, b) -> (b, a + b)) (1, 1)
+import System.Exit (exitFailure)
+import Text.Read (readMaybe)
 
+fibonacci :: Int -> [Integer]
+fibonacci n = take n (map fst (iterate step (0, 1)))
+  where
+    step (a, b) = (b, a + b)
+
+main :: IO ()
 main = do
-  putStrLn "Enter the number of Fibonacci terms to be printed"
-  input <- getLine
-  let n = read input :: Integer
-  putStrLn (show (fibonacci n))
+  input <- getContents
+  case readMaybe (unwords (words input)) :: Maybe Int of
+    Just n | n >= 0 -> putStrLn (unwords (map show (fibonacci n)))
+    _ -> exitFailure
