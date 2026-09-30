@@ -12,9 +12,9 @@ permissions:
 
 jobs:
   validate:
-    name: Validate repository
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
+    name: Validate and test repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repository
@@ -27,3 +27,9 @@ jobs:
 
       - name: Validate repository structure
         run: python utils/validate_repository.py
+
+      - name: Test canonical implementations
+        run: python utils/test_implementations.py --write-status
+
+      - name: Verify generated implementation status is current
+        run: git diff --exit-code tests/STATUS.md

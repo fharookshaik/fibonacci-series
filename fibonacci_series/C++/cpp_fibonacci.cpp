@@ -1,20 +1,27 @@
 #include <iostream>
-using namespace std;
 
-int main() 
-{
-    int i,n;
-   unsigned long int t1 = 0, t2 = 1, t3 = 0 ;
-   cout<<"Enter the number of terms: ";
-   cin>>n;
-    cout<<"Fibonacci Series: "<<endl;
+int main() {
+    long long n;
 
-    for (i = 1; i <= n; ++i) {
-       cout<<t1<< ","<<" ";
-      t3 = t1 + t2;
-        t1 = t2;
-        t2 = t3;
+    if (!(std::cin >> n) || n < 0 || n > 94) {
+        return 2;
     }
 
+    unsigned long long a = 0;
+    unsigned long long b = 1;
+
+    for (long long i = 0; i < n; ++i) {
+        if (i > 0) {
+            std::cout << ' ';
+        }
+
+        std::cout << a;
+
+        const auto next = a + b;
+        a = b;
+        b = next;
+    }
+
+    std::cout << '\n';
     return 0;
 }

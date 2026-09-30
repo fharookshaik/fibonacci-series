@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 IMPLEMENTATIONS = ROOT / "fibonacci_series"
 LANGUAGES_FILE = ROOT / "Languages.md"
 
-ALLOWED_TOP_LEVEL_DIRS = {".git", ".github", "fibonacci_series", "utils"}
+ALLOWED_TOP_LEVEL_DIRS = {".git", ".github", "fibonacci_series", "tests", "utils"}
 FORBIDDEN_NAMES = {".DS_Store", "Thumbs.db"}
 FORBIDDEN_DIR_NAMES = {".idea", ".vscode", "__pycache__", "node_modules"}
 FORBIDDEN_SUFFIXES = {".pyc", ".pyo", ".swp", ".swo"}

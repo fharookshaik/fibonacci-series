@@ -1,35 +1,35 @@
-import java.util.Scanner;
 import java.math.BigInteger;
+import java.util.Scanner;
 
 class FibonacciExampleJava {
     public static void main(String[] args) {
-        // create an instance of the Scanner class to take an input from the user
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            if (!scanner.hasNextInt()) {
+                System.exit(2);
+            }
 
-        // show a prompt to the user to input the number of terms in the series
-        System.out.println("How many terms would you like in the series?: ");
+            int n = scanner.nextInt();
+            if (n < 0) {
+                System.exit(2);
+            }
 
-        // take the input, using BigInteger to virtually store very large integer numbers
-        int numberOfTerms = scanner.nextInt();
+            BigInteger a = BigInteger.ZERO;
+            BigInteger b = BigInteger.ONE;
+            StringBuilder output = new StringBuilder();
 
-        // create the first term and the second term of the series
-        BigInteger firstTerm = BigInteger.ZERO;
-        BigInteger secondTerm = BigInteger.ONE;
+            for (int i = 0; i < n; i++) {
+                if (i > 0) {
+                    output.append(' ');
+                }
 
-        // print the first two terms of the series, using printf for formatting
-        System.out.printf("%d, %d, ", firstTerm, secondTerm);
+                output.append(a);
 
-        // calculate the next terms in the series using a loop
-        int termsPrinted = 2;
-        while (termsPrinted < numberOfTerms) {
-            BigInteger nextTerm = firstTerm.add(secondTerm);
-            // print the next term in the series
-            System.out.printf("%d%s", nextTerm, (termsPrinted != numberOfTerms - 1 ? ", " : "."));
-            // update the firstTerm and the secondTerm variables
-            firstTerm = secondTerm;
-            secondTerm = nextTerm;
-            // update the number of terms printed in the series
-            termsPrinted++;
+                BigInteger next = a.add(b);
+                a = b;
+                b = next;
+            }
+
+            System.out.println(output);
         }
     }
 }

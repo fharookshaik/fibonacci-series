@@ -1,14 +1,28 @@
-def fibonacci(num):
-    num1 = 0
-    num2 = 1
-    series = 0
-    i = 0
-    while i<=num:
-        print(series);
-        num1 = num2;
-        num2 = series;
-        series = num1 + num2;
-        i+= 1
-# running function after taking user input
-num = int(input('Enter how many numbers needed in Fibonacci series : '))
-fibonacci(num)
+import sys
+
+
+def fibonacci_terms(n: int) -> list[int]:
+    terms = []
+    a, b = 0, 1
+    for _ in range(n):
+        terms.append(a)
+        a, b = b, a + b
+    return terms
+
+
+def main() -> int:
+    raw = sys.stdin.readline().strip()
+    try:
+        n = int(raw)
+    except ValueError:
+        return 2
+
+    if n < 0:
+        return 2
+
+    print(" ".join(str(value) for value in fibonacci_terms(n)))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
