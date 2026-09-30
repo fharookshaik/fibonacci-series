@@ -23,7 +23,7 @@ Hello there!!
 - Go
 - Haskell
 - Java
-- Javascript
+- JavaScript
 - Julia
 - Kotlin
 - Lua
