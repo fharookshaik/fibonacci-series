@@ -1,0 +1,39 @@
+name: New language proposal
+description: Propose adding a Fibonacci implementation in a language not currently represented.
+title: "[Language]: "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Programming language
+      placeholder: Example: Zig
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime / compiler
+      placeholder: Example: Zig 0.15
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed implementation
+      description: Briefly describe the algorithm and expected input/output behavior.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I confirmed the language is not already listed in Languages.md.
+          required: true
+        - label: I will follow the canonical Fibonacci convention in CONTRIBUTING.md.
+          required: true

@@ -1,0 +1,42 @@
+name: Optimization proposal
+description: Propose improving an existing implementation or algorithm.
+title: "[Optimization]: "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current limitation
+      description: Explain what should be improved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the algorithmic or implementation change and why it is better.
+    validations:
+      required: true
+
+  - type: input
+    id: complexity
+    attributes:
+      label: Expected complexity
+      placeholder: Example: O(n) time, O(1) space
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The proposal preserves correct Fibonacci output.
+          required: true

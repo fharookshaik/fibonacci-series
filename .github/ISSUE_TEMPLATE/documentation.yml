@@ -1,0 +1,20 @@
+name: Documentation improvement
+description: Report unclear, outdated, or missing documentation.
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Document or section
+      placeholder: Example: CONTRIBUTING.md / Testing
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should change?
+    validations:
+      required: true
